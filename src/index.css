@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;700&family=Manrope:wght@400;600&family=Space+Mono&display=swap');
+
+@theme {
+  --font-headline: "Epilogue", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --color-almond-shell: #F3EBE3;
+  --color-cacao-deep: #322312;
+  --color-berry-glaze: #FF77C9;
+  --color-cream-pastel: #FFDFEF;
+  --color-surface: #fdf9f6;
+  --color-on-surface: #1c1b1a;
+  --color-on-surface-variant: #4e453d;
+  --color-secondary: #a52c7c;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-headline;
+  }
+}
+
+.font-label-mono {
+  @apply font-mono text-[12px] uppercase tracking-[0.1em];
+}
+
